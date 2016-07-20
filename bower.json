@@ -1,0 +1,11 @@
+{
+   "name": "interact-registry-frontend-app",
+   "version": "0.0.4",
+   "license": "GPL-3",
+   "interactRepository": "/home/oliverfoster/Working/pluginmanager/interact-registry-repo/",
+   "dependencies": {
+      "interact-client-index-html5": "*",
+      "interact-client-core": "*",
+      "interact-client-libraries": "*"
+   }
+}

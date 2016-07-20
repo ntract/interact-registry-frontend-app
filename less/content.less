@@ -1,0 +1,48 @@
+.content {
+    padding-top: 200px;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    
+}
+
+.content-inner {
+	.theme-responsive-sizes();
+}
+
+@device-width-large: 960px;
+@device-width-medium: 960px;
+@device-width-small: 520px;
+
+
+.theme-responsive-sizes () {
+	margin: auto;
+	max-width: @device-width-large;
+	padding-left: 0;
+	padding-right: 0;
+
+	@media all and (max-width: (@device-width-large + 20px)) {
+		max-width: @device-width-medium;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	@media all and (max-width: (@device-width-medium)) {
+		max-width: @device-width-small;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	@media all and (max-width: (@device-width-small)) {
+		max-width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	@media all and (max-width: (321px)) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
