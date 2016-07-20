@@ -1,7 +1,7 @@
 plugins.started(function() {
 require([
-	"plugins/interact-registry-frontend-src/js/content",
-	"plugins/interact-registry-frontend-src/js/header",
+	"plugins/interact-registry-frontend-app/js/content",
+	"plugins/interact-registry-frontend-app/js/header",
 	"backbone.differ"
 ], function(ContentView, HeaderView) {
 
