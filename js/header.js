@@ -1,5 +1,5 @@
 define([
-	"plugins/interact-registry-frontend-app/js/search",
+	"plugins/ntract-registry-frontend-app/js/search",
 	"backbone.differ"
 ], function(SearchView) {
 

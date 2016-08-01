@@ -1,6 +1,6 @@
 require([
-	"plugins/interact-registry-frontend-app/js/content",
-	"plugins/interact-registry-frontend-app/js/header",
+	"plugins/ntract-registry-frontend-app/js/content",
+	"plugins/ntract-registry-frontend-app/js/header",
 	"backbone.differ"
 ], function(ContentView, HeaderView) {
 
