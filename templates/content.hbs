@@ -1,1 +1,15 @@
-<div class="content-inner" view-container="true"></div>
+<div class="content-inner">
+{{#each results}}
+	<div class="result">
+		<span class="name">
+			{{name}}
+		</span>
+		<span class="hits">
+			hits: {{hits}}
+		</span>
+		<span class="url">
+			<a href="{{@root/view.getPageURL url}}">{{@root/view.getPageURL url}}</a>
+		</span>
+	</div>
+{{/each}}
+</div>

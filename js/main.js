@@ -1,7 +1,8 @@
 require([
 	"plugins/ntract-registry-frontend-app/js/content",
 	"plugins/ntract-registry-frontend-app/js/header",
-	"backbone.differ"
+	"backbone.differ",
+	"backbone.controller"
 ], function(ContentView, HeaderView) {
 
 	plugins.started(function() {
@@ -39,11 +40,20 @@ require([
 		});
 
 
-		window.app = {
-			main: (new MainView({}))
-		};
+		var App = Backbone.Controller.extend({
 
-		$("body").append(app.main.$el);
+			initialize: function() {
+
+				this.main = new MainView({});
+				$("body").append(this.main.$el);
+				
+			}
+
+		});
+
+		window.app = new App();
+
+		
 
 	});
 });
