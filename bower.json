@@ -1,6 +1,5 @@
 {
    "name": "ntract-registry-frontend-app",
-   "version": "0.0.4",
    "license": "GPL-3",
    "ntractRepository": "/home/oliverfoster/Working/pluginmanager/ntract-registry-repo/",
    "dependencies": {
